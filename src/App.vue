@@ -1,16 +1,39 @@
 <template>
     <el-container>
       <el-header>Header</el-header>
-      <el-main>  main </el-main>
+      <el-main>
+         <hello-world />
+      </el-main>
       <el-footer>Footer</el-footer>
     </el-container>
+<!-- <div id="app" class="w-100">
+          <div class="col-12">
+            <vue-advanced-calculator />
+          </div>
+        </div> -->
+        <!-- <div>
+        <LoginPage />
+        </div> -->
+       
 </template>
 
 <script>
+  // import {VueAdvancedCalculator} from 'vue-advanced-calculator'
+  // import 'vue-advanced-calculator/dist/vue-advanced-calculator.min.css'
+  // import {HelloWorld} from '@/components/hello-world.vue'
+  // import {LoginPage} from '@/page/login/login-page.vue'
+import HelloWorld from '@/components/hello-world.vue'
 
-export default {
-  name: "App",
-}
+  export default {
+
+    name: "App",
+    //component code
+    components: {
+      // HelloWorld,
+      // LoginPage
+        HelloWorld
+    }
+  }
 </script>
 
 <style>
@@ -20,13 +43,13 @@ html{
     overflow: hidden;   
     font-style: sans-serif;   
 }
-body{   
+/* body{   
     width: 100%;   
     height: 100%;   
     font-family: 'Open Sans',sans-serif;   
     margin: 0;   
     background-color: #4A374A;   
-} 
+}  */
 
 .el-container{
     /*设置内部填充为0，几个布局元素之间没有间距*/
@@ -50,6 +73,10 @@ body{
   color: #333;
   text-align: center;
   line-height: 160px;
+}
+
+.hello-world {
+  height: 10%;
 }
 
 #app {

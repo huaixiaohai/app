@@ -1,9 +1,10 @@
 // import VueRouter from 'vue-router'
 import {createRouter, createWebHashHistory} from 'vue-router'
 
-import LoginPage from '@/view/login/LoginPage'
-import HelloWorld from '@/components/HelloWorld'
+import LoginPage from '@/page/login/login-page'
+import HelloWorld from '@/components/hello-world'
 // import LoginPage from './view/login/LoginPage'
+
 
 // 2. 定义一些路由
 // 每个路由都需要映射到一个组件。
