@@ -1,5 +1,6 @@
 <template>
-    <h1> 在线工具 </h1>  
+  <h1> 在线工具 </h1>  
+  <div class="cell">
     <el-row :gutter="20">
         <el-col :span="6">
             <tool-cell />
@@ -8,6 +9,39 @@
         <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
         <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
     </el-row>
+    <el-row :gutter="20">
+        <el-col :span="6">
+            <tool-cell />
+        </el-col>
+        <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
+        <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
+        <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
+    </el-row>
+    <el-row :gutter="20">
+        <el-col :span="6">
+            <tool-cell />
+        </el-col>
+        <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
+        <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
+        <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
+    </el-row>
+    <el-row :gutter="20">
+        <el-col :span="6">
+            <tool-cell />
+        </el-col>
+        <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
+        <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
+        <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
+    </el-row>
+    <el-row :gutter="20">
+        <el-col :span="6">
+            <tool-cell />
+        </el-col>
+        <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
+        <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
+        <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
+    </el-row>
+    </div>
 </template>
 
 <script lang="ts">
@@ -23,9 +57,14 @@ export default class App extends Vue {}
 </script>
 
 <style scoped>
+
+  .cell {
+    width: 50%;
+    margin: auto;
+  }
+
   .el-row {
     margin-bottom: 20px;
-        height: 80;
   }
   
   .el-card {
