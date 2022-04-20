@@ -9,13 +9,13 @@
     </div>  
 </template>
 
-<script>
+<script lang="ts">
 export default {
     
 }
 </script>
 
-<style>  
+<style lang="scss" scoped>
 #login{   
     position: absolute;   
     top: 50%;   

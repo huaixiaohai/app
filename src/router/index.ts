@@ -1,8 +1,11 @@
 // import VueRouter from 'vue-router'
 import {createRouter, createWebHashHistory} from 'vue-router'
 
-import LoginPage from '@/page/login/login-page'
-import HelloWorld from '@/components/hello-world'
+// import LoginPage from '@/page/login'
+// import TestPage from '@/page/test/test-page.vue'
+import HomePage from '@/page/home/home-page.vue'
+import CalculatorPage from '@/page/calculator/calculator-page.vue'
+
 // import LoginPage from './view/login/LoginPage'
 
 
@@ -10,8 +13,10 @@ import HelloWorld from '@/components/hello-world'
 // 每个路由都需要映射到一个组件。
 // 我们后面再讨论嵌套路由。
 const routes = [
-  { path: '/', component: LoginPage },
-  { path: '/about', component: HelloWorld },
+  // { path: '/', component: LoginPage },
+  { path: '/', component: HomePage },
+  // { path: '/test', component: TestPage },
+  { path: '/calculator', component: CalculatorPage },
 ]
 
 // 3. 创建路由实例并传递 `routes` 配置
