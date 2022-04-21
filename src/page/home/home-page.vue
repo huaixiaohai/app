@@ -1,47 +1,12 @@
 <template>
   <h1> 在线工具 </h1>  
-  <div class="cell">
-    <el-row :gutter="20">
-        <el-col :span="6">
-            <tool-cell />
-        </el-col>
-        <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
-        <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
-        <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
-    </el-row>
-    <el-row :gutter="20">
-        <el-col :span="6">
-            <tool-cell />
-        </el-col>
-        <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
-        <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
-        <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
-    </el-row>
-    <el-row :gutter="20">
-        <el-col :span="6">
-            <tool-cell />
-        </el-col>
-        <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
-        <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
-        <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
-    </el-row>
-    <el-row :gutter="20">
-        <el-col :span="6">
-            <tool-cell />
-        </el-col>
-        <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
-        <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
-        <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
-    </el-row>
-    <el-row :gutter="20">
-        <el-col :span="6">
-            <tool-cell />
-        </el-col>
-        <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
-        <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
-        <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
-    </el-row>
-    </div>
+  <div class="tool-cell-list">
+    <tool-cell></tool-cell>
+    <tool-cell></tool-cell>
+    <tool-cell></tool-cell>
+    <tool-cell></tool-cell>
+    <tool-cell></tool-cell>
+  </div>
 </template>
 
 <script lang="ts">
@@ -57,10 +22,12 @@ export default class App extends Vue {}
 </script>
 
 <style scoped>
-
-  .cell {
-    width: 50%;
-    margin: auto;
+  .tool-cell-list{
+    display: grid;
+  }
+  .tool-cell {
+     max-height: 100px;
+     max-width: 200px; 
   }
 
   .el-row {
