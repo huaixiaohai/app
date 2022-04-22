@@ -1,27 +1,32 @@
 <template>
-  <div class="app-head">
-    <el-button type="text">在线工具</el-button>
-    <ul>
-      <el-button  type="text">登录</el-button>
-      <el-button  type="text">开放注册</el-button>
-    </ul>
+  <div class="common-layout">
+    <el-container>
+      <el-header>
+        <el-row class="row-bg" justify="space-evenly">
+          <el-col :span="6">
+            <h1>在线工具</h1>
+          </el-col>
+          <el-col :span="6">
+          </el-col>
+          <el-col :span="6">
+            <el-input v-model="input1" class="w-50 m-2" placeholder="Please Input" :suffix-icon="Search" />
+          </el-col>
+        </el-row>
+      </el-header>
+      <el-main>
+        <div class="main">
+          <router-view></router-view>
+        </div>
+      </el-main>
+      <el-footer>
+
+      </el-footer>
+    </el-container>
   </div>
-  <div class="app-main">
-    <div>
-      <router-view></router-view>
-    </div>
-  </div>
-  <div class="app-tail">
-    <p>//TODO首页</p>
-    <p>//TODOCopyright © 2011-2022 iteam. Current version is 2.88.1. UTC+08:00, 2022-04-21 18:50</p>
-    <p>//TODO浙ICP备14020137号-1 $访客地图$</p>
-  </div>
+
 </template>
 
 <script lang="ts">
-// import { Options, Vue } from 'vue-class-component';
-
-
 // @Options({
 //   components: {
 
@@ -31,37 +36,26 @@
 //   activeIndex: true = true;
 //   handleSelect: true= true;
 // }
-export default {}
-
+export default {};
 </script>
 
 <style scoped>
-  .app-head{
-    height: 30px;
-    background: rgb(73, 73, 73);
-  }
-  .app-head ul {
-    float: right;
-  }
-  .el-button {
-    position: relative;
-    display: inline-block;
-    padding: 0 12px;
-    height: 29px;
-    /* line-height: 20px; */
-    color: #ccc;
-    text-decoration: none; 
-  }
-  .app-main{
-    min-height: 500px;
-    
-  }
-  .app-main div{
-    margin: auto;
-    width: 70%; 
-  }
-  .app-tail{
-    text-align: center;
-  }
+.el-header {
+  /* background: #ecebeb; */
+  box-shadow: 0px 0px 5px #e5e4e4;
+  height: 100px;
+}
+.el-row {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+.main {
+  width: 80%;
+  margin: auto;
+}
 </style>
 
