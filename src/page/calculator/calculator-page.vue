@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Calculator</h1>
+    <h1>计算器</h1>
     <h3 v-if="loggedInUser">Hello {{ loggedInUser }}!</h3>
     <p v-if="welcomeMessage">{{ welcomeMessage }}</p>
     <Calculator />
@@ -16,10 +16,10 @@ export default {
     Calculator,
   },
   computed: {
-    welcomeMessage() {
+    welcomeMessage () {
       return this.$store.getters.loginWelcome;
     },
-    loggedInUser() {
+    loggedInUser () {
       return this.$store.getters.loggedInUser;
     },
   },

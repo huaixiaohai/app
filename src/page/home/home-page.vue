@@ -1,6 +1,15 @@
 <template>
   <div class="tool-cell-list">
     <tool-cell v-for="toolCellData in toolCellDataList" :key="toolCellData.id" :toolCellData="toolCellData"></tool-cell>
+    <tool-cell v-for="toolCellData in toolCellDataList" :key="toolCellData.id" :toolCellData="toolCellData"></tool-cell>
+    <tool-cell v-for="toolCellData in toolCellDataList" :key="toolCellData.id" :toolCellData="toolCellData"></tool-cell>
+    <tool-cell v-for="toolCellData in toolCellDataList" :key="toolCellData.id" :toolCellData="toolCellData"></tool-cell>
+    <tool-cell v-for="toolCellData in toolCellDataList" :key="toolCellData.id" :toolCellData="toolCellData"></tool-cell>
+    <tool-cell v-for="toolCellData in toolCellDataList" :key="toolCellData.id" :toolCellData="toolCellData"></tool-cell>
+    <tool-cell v-for="toolCellData in toolCellDataList" :key="toolCellData.id" :toolCellData="toolCellData"></tool-cell>
+    <tool-cell v-for="toolCellData in toolCellDataList" :key="toolCellData.id" :toolCellData="toolCellData"></tool-cell>
+    <tool-cell v-for="toolCellData in toolCellDataList" :key="toolCellData.id" :toolCellData="toolCellData"></tool-cell>
+    <tool-cell v-for="toolCellData in toolCellDataList" :key="toolCellData.id" :toolCellData="toolCellData"></tool-cell>
   </div>
 </template>
 
@@ -20,7 +29,7 @@ export default {
           id: 0,
           name: "计算器",
           desc: "常规加，减，乘，除等计算",
-          icon: require("@/assets/logo.jpg"),
+          icon: require("@/assets/calcultor.png"),
         },
       ],
     };
