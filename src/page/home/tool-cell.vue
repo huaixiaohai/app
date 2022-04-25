@@ -1,13 +1,30 @@
 <template>
+
   <el-card shadow="hover" :body-style="{ padding: '0px' }">
-    <el-image style="" :src="url" :fit="cover" />
-    <h1 class="name">计算器</h1>
-    <p class="desc">描述描述描述描述描述描述描述描述描述描述描述描述描述描述</p>
+    <router-link to="/calculator">
+      <el-image style="" :src=toolCellData.icon :fit="cover" />
+      <h1 class="name">{{toolCellData.name}}</h1>
+      <p class="desc">{{toolCellData.desc}}</p>
+    </router-link>
   </el-card>
+
 </template>
 
 <script lang="ts">
-export default {};
+export default {
+  name: "tool-cell",
+  props: {
+    toolCellData: {
+      type: Object,
+      required: true,
+      default: () => {},
+    },
+  },
+
+  setup(props: any) {
+    console.log(props.toolCellData.id);
+  },
+};
 </script>
 
 <style scoped>

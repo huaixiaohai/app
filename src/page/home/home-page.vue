@@ -1,26 +1,36 @@
 <template>
   <div class="tool-cell-list">
-    <tool-cell></tool-cell>
-    <tool-cell></tool-cell>
-    <tool-cell></tool-cell>
-    <tool-cell></tool-cell>
-    <tool-cell></tool-cell>
-    <tool-cell></tool-cell>
-    <tool-cell></tool-cell>
-    <tool-cell></tool-cell>
+    <tool-cell v-for="toolCellData in toolCellDataList" :key="toolCellData.id" :toolCellData="toolCellData"></tool-cell>
   </div>
 </template>
 
 <script lang="ts">
-import { Options, Vue } from "vue-class-component";
 import ToolCell from "./tool-cell.vue";
+export default {
+  name: "home-page",
 
-@Options({
   components: {
     ToolCell,
   },
-})
-export default class App extends Vue {}
+
+  data() {
+    return {
+      toolCellDataList: [
+        {
+          id: 0,
+          name: "计算器",
+          desc: "常规加，减，乘，除等计算",
+          icon: require("@/assets/logo.jpg"),
+        },
+      ],
+    };
+  },
+
+  // async created: function () {
+  //   const res = await ToolList({})
+
+  // },
+};
 </script>
 
 <style scoped>

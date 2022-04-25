@@ -4,7 +4,9 @@
       <el-header>
         <el-row class="row-bg" justify="space-evenly">
           <el-col :span="6">
-            <h1>在线工具</h1>
+            <router-link to="/">
+              <h1>在线工具</h1>
+            </router-link>
           </el-col>
           <el-col :span="6">
           </el-col>
