@@ -5,6 +5,7 @@ import {createRouter, createWebHashHistory} from 'vue-router'
 // import TestPage from '@/page/test/test-page.vue'
 import HomePage from '@/page/home/home-page.vue'
 import CalculatorPage from '@/page/calculator/calculator-page.vue'
+import JsonFormatPage from '@/page/json-format/json-format-page.vue'
 
 // import LoginPage from './view/login/LoginPage'
 
@@ -17,6 +18,7 @@ const routes = [
   { path: '/', component: HomePage },
   // { path: '/test', component: TestPage },
   { path: '/calculator', component: CalculatorPage },
+  { path: '/jsonformat', component: JsonFormatPage },
 ]
 
 // 3. 创建路由实例并传递 `routes` 配置
